@@ -1,0 +1,90 @@
+<!-- <form name="myform" id="myform" onSubmit="return formValidation()"> use this in any form to work js validation -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generic form</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    		<link rel="stylesheet" type="text/css" href="css/style.css"/>         
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="js/script.js"></script>                                   
+    
+</head>
+
+
+<div id="main">
+	<h1>Registration Form</h1>
+	
+	<form name="myform" novalidate onSubmit="return validation(this)" method="post" >
+	<ul>
+
+	<!-- text boxes-->
+	
+	<li><label>UserName:</label></li>
+	<li><input type="text"  name="username" id="username"  size="50" /></li>
+	<li><label>FirstName:</label></li>
+	<li><input type="text"  name="firstname" id="firstname" size="50" /></li>
+	<li><label>LastName:</label></li>
+	<li><input type="text"  name="lastname" id="lastname" size="50" /></li>
+	<li><label>Email:</label></li>
+	<li><input type="email"  name="email" id="email" size="50" /></li>
+
+
+	<!-- Password -->
+
+
+	<li><label >Password:</label></li>
+	<li><input type="password" id="password" name="password" size="50" /></li>
+	<li><label >Re-enter Password:</label></li>
+	<li><input type="password" id="conformpassword" name="conformpassword" size="50" /></li>
+
+	
+<!--radio buttons-->
+
+	<li>
+	<label >Sex:</label>
+	<input type="radio" name="sex" id="sex"  value="m"><span>Male</span>
+	<input type="radio" name="sex" id="sex" value="f" /><span>Female</span>
+	</li>
+
+
+<!-- Date -->
+
+
+	<li><label>Birthday:</label></li>
+	<li><input type="date" name="date" id="date"/></li><br><br>
+	
+	
+	<!--check boxes-->
+
+
+	<li><label >Qualification:</label></li>
+	<li><input type="checkbox" name="qualification" id="qualification"   value="MCA"><span>MCA</span></li>
+	<li><input type="checkbox" name="qualification"  id="qualification" value="BCA"><span>BCA</span></li>
+	
+	
+	
+	<!--Select box-->
+
+
+	<li><label>COUNTRY:</label></li>
+	<li>	
+			
+				<select  name="country" id="country">
+				<option value="0">SELECT-COUNTRY</option>
+				<option value="1">INDIA</option>
+				<option value="2">OTHERS</option>
+				<option></option>
+				
+				</select>
+	</li><br><br>
+	
+	
+	<li><input type="submit" name="submit" id="submit" value="Submit" /></li>
+	</ul>
+	</form>
+</div>
+</body>
+</html>
